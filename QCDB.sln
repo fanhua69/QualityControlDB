@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QCDB", "QCDB.vcxproj", "{9177FF05-AD01-49DF-891B-B0DD8E2D393A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FHFrame", "..\FHFrame\FHFrame.vcxproj", "{222C2E2A-E531-4796-A218-F0F4A0E88C0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Template|x86 = Template|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9177FF05-AD01-49DF-891B-B0DD8E2D393A}.Debug|x86.ActiveCfg = Debug|Win32
+		{9177FF05-AD01-49DF-891B-B0DD8E2D393A}.Debug|x86.Build.0 = Debug|Win32
+		{9177FF05-AD01-49DF-891B-B0DD8E2D393A}.Release|x86.ActiveCfg = Release|Win32
+		{9177FF05-AD01-49DF-891B-B0DD8E2D393A}.Release|x86.Build.0 = Release|Win32
+		{9177FF05-AD01-49DF-891B-B0DD8E2D393A}.Template|x86.ActiveCfg = Release|Win32
+		{9177FF05-AD01-49DF-891B-B0DD8E2D393A}.Template|x86.Build.0 = Release|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Debug|x86.ActiveCfg = Debug|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Debug|x86.Build.0 = Debug|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Release|x86.ActiveCfg = Release|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Release|x86.Build.0 = Release|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Template|x86.ActiveCfg = Template|Win32
+		{222C2E2A-E531-4796-A218-F0F4A0E88C0A}.Template|x86.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

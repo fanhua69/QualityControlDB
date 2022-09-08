@@ -1,0 +1,1359 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_buttonSetPar         "设置全局参数\n设置全局参数"
+END
+
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\mainframetoolbar.bmp"
+IDB_QCDB_COVER          BITMAP                  "res\\qcdb.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_UserRegister
+    SEPARATOR
+    BUTTON      ID_ConnectServers
+    SEPARATOR
+    BUTTON      ID_SetGlobalInfo
+    BUTTON      ID_OutputTable
+    BUTTON      ID_GetDataFromServer
+    SEPARATOR
+    BUTTON      ID_ZoomIn
+    BUTTON      ID_ZoomOut
+    BUTTON      ID_ZoomFull
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_WORKSPACEBAR
+    BUTTON      ID_OutputBar
+    BUTTON      ID_ShowDataFlowHistory
+    BUTTON      ID_ShowLinker
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\QCDB.rc2""  // 非 Microsoft Visual C++ 编辑资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#include ""afxprint.rc""       // 打印/打印预览资源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\QCDB.ico"
+IDR_QCDBTYPE            ICON                    "res\\QCDBDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",            ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "设置全局信息",                ID_SetGlobalInfo
+        MENUITEM "建立新数据库",                ID_CreateOriDB
+        MENUITEM "重新监听",                    ID_ReListen
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "操作(&O)"
+    BEGIN
+        MENUITEM "显示并编辑数据(&S)",          ID_GetDataFromServer
+        MENUITEM "显示数据传输历史(&H)",        ID_ShowDataFlowHistory
+        MENUITEM "显示连接的计算机(&L)",        ID_ShowLinker
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "关于 QCDB(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_QCDBTYPE MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",            ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "保存\tCtrl+S(&S)",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "设置全局信息",                32797
+        MENUITEM "建立新数据库",                ID_CreateOriDB
+        MENUITEM "向服务器发送数据",            ID_SendDataToServer
+        MENUITEM SEPARATOR
+        MENUITEM "打印...\tCtrl+P(&P)",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消\tCtrl+Z(&U)",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切\tCtrl+X(&T)",            ID_EDIT_CUT
+        MENUITEM "复制\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "粘贴\tCtrl+V(&P)",            ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助主题(&H)",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "关于 QCDB(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_DBBrowser_ChooseData MENU 
+BEGIN
+    POPUP "ID_Creator"
+    BEGIN
+        MENUITEM "选择显示数据",                ID_ChooseShowData
+        MENUITEM "下一页",                      ID_DBShowNextPage
+        MENUITEM "上一页",                      ID_DBShowPrevPage
+        MENUITEM "选择显示页",                  32813
+        MENUITEM "从数据库更新数据",            ID_UpdateDataFromDB
+        POPUP "向服务器提交数据"
+        BEGIN
+            MENUITEM "只发送未提交过的记录",        ID_SendDataToServerNoHanded
+
+            MENUITEM "发送所有记录",                ID_SendDataToServerAll
+        END
+    END
+END
+
+IDR_DBBrowse MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",            ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "保存\tCtrl+S(&S)",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "建立新数据库",                ID_CreateOriDB
+        MENUITEM "向服务器发送数据",            ID_SendDataToServer
+        MENUITEM SEPARATOR
+        MENUITEM "打印...\tCtrl+P(&P)",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "发送(&D)...",                 ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消\tCtrl+Z(&U)",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切\tCtrl+X(&T)",            ID_EDIT_CUT
+        MENUITEM "复制\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "粘贴\tCtrl+V(&P)",            ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 JLDB(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_DBChart MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",            ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "保存\tCtrl+S(&S)",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "设置全局信息",                32797
+        MENUITEM "建立新数据库",                ID_CreateOriDB
+        MENUITEM "向服务器发送数据",            ID_SendDataToServer
+        MENUITEM SEPARATOR
+        MENUITEM "打印...\tCtrl+P(&P)",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "发送(&D)...",                 ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消\tCtrl+Z(&U)",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切\tCtrl+X(&T)",            ID_EDIT_CUT
+        MENUITEM "复制\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "粘贴\tCtrl+V(&P)",            ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 JLDB(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_DBTree_Popup MENU 
+BEGIN
+    POPUP "ID_Creator"
+    BEGIN
+        MENUITEM "建立新数据库",                ID_MakeNewDataBase
+        MENUITEM "打开数据库",                  ID_ChooseDataBase
+        MENUITEM "清空数据库",                  ID_ClearDB
+        MENUITEM "编辑数据表",                  ID_DBTree_DrawData
+        MENUITEM "图形监控数据表",              ID_DBTree_DrawChart
+    END
+END
+
+IDR_DataTransfer MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",            ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "保存\tCtrl+S(&S)",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "设置全局信息",                ID_SetGlobalInfo
+        MENUITEM "建立新数据库",                ID_CreateOriDB
+        MENUITEM "向服务器发送数据",            ID_SendDataToServer
+        MENUITEM SEPARATOR
+        MENUITEM "打印...\tCtrl+P(&P)",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "发送(&D)...",                 ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消\tCtrl+Z(&U)",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切\tCtrl+X(&T)",            ID_EDIT_CUT
+        MENUITEM "复制\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "粘贴\tCtrl+V(&P)",            ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 JLDB(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_Menu_LinkerView MENU 
+BEGIN
+    POPUP "Linker_Popup"
+    BEGIN
+        MENUITEM "显示所有服务器",              ID_Linker_ShowAllParents
+        MENUITEM "显示在连服务器",              ID_Linker_ShowLinkingParents
+        MENUITEM "显示所有客户端",              ID_Linker_ShowAllChildren
+        MENUITEM "显示在连客户端",              ID_Linker_ShowLinkingChildren
+
+    END
+END
+
+IDR_Menu_DataBrowseView MENU 
+BEGIN
+    POPUP "DBBrowse"
+    BEGIN
+        MENUITEM "选择数据",                    ID_ModifyShowProperty
+        MENUITEM "下一页",                      ID_NextPage
+        MENUITEM "上一页",                      ID_PrevPage
+        MENUITEM "数据显示属性",                ID_ChoosePage
+        MENUITEM "加载图片",                    ID_LoadPic
+        MENUITEM "图片显示属性",                ID_SetPicProperty
+        MENUITEM "横向显示",                    ID_ShowHor
+        MENUITEM "删除当前记录",                ID_DeleteRecord
+        MENUITEM "恢复当前记录",                ID_RecoverRecord
+        MENUITEM "增加记录",                    ID_AddRecord
+        MENUITEM "克隆最后一条记录",            ID_CloneLastRecord
+        MENUITEM "从数据库更新数据",            ID_UpdateDataFromDB
+        MENUITEM "更新数据库",                  ID_UpdateDB
+        POPUP "向服务器提交数据"
+        BEGIN
+            MENUITEM "只发送未提交过的记录",        ID_SendDataToServerNoHanded
+
+            MENUITEM "发送所有记录",                ID_SendDataToServerAll
+        END
+        MENUITEM "导入QC数据",                  ID_DBBROWSE_InputQCData
+    END
+END
+
+IDR_ID_Creator MENU 
+BEGIN
+    POPUP "ID_Creater"
+    BEGIN
+        MENUITEM "设置图标属性",                ID_SetChartProperty
+        MENUITEM "输出报表",                    ID_OutputTable
+        MENUITEM "放大",                        ID_ZoomIn
+        MENUITEM "缩小",                        ID_ZoomOut
+        MENUITEM "全屏",                        ID_ZoomFull
+        MENUITEM "连接服务器",                  ID_ConnectServers
+    END
+END
+
+IDR_ReportCreator MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建\tCtrl+N(&N)",            ID_FILE_NEW
+        MENUITEM "打开...\tCtrl+O(&O)",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "保存\tCtrl+S(&S)",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "建立新数据库",                ID_CreateOriDB
+        MENUITEM "向服务器发送数据",            ID_SendDataToServer
+        MENUITEM SEPARATOR
+        MENUITEM "打印...\tCtrl+P(&P)",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "发送(&D)...",                 ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消\tCtrl+Z(&U)",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切\tCtrl+X(&T)",            ID_EDIT_CUT
+        MENUITEM "复制\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "粘贴\tCtrl+V(&P)",            ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 JLDB(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_ReportView MENU 
+BEGIN
+    POPUP "ReportView"
+    BEGIN
+        MENUITEM "设置报表显示属性",            ID_REPORTVIEW_SetShowProperty
+
+        MENUITEM "打印",                        32863
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 255, 98
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于 QCDB"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "QCDB 地震勘探监理数据库 版本1.0",IDC_STATIC,41,16,119,8,
+                    SS_NOPREFIX
+    LTEXT           "所有版权归中油物探监理公司所有(C) 2005-2020",IDC_STATIC,
+                    41,26,153,8
+    DEFPUSHBUTTON   "确定",IDOK,198,9,50,16,WS_GROUP
+    LTEXT           "任何未经授权的复制、分发、出售均为非法。",IDC_STATIC,41,
+                    45,147,8
+    LTEXT           "本软件受中华人民共和国版权法保护",IDC_STATIC,41,36,119,
+                    8
+    LTEXT           "本授权系列号:",IDC_STATIC,41,61,51,8
+    EDITTEXT        IDC_editSerial,90,58,111,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_DBShowProperty DIALOGEX 0, 0, 286, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "数据库显示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "数据表名称:",IDC_STATIC,5,43,77,10
+    COMBOBOX        IDC_ComboTableName,86,40,191,78,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "显示字段",IDC_STATIC,195,82,43,11
+    CTEXT           "表中字段",IDC_STATIC,28,83,43,11
+    LISTBOX         IDC_ListExistFields,7,98,86,116,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_ListShowFields,155,98,122,116,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "最多获取记录数目:",IDC_STATIC,0,61,82,10
+    CONTROL         "",IDC_SpinShowQty,"msctls_updown32",UDS_ARROWKEYS,266,
+                    56,11,17
+    EDITTEXT        IDC_EditShowQtyPermit,86,57,181,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "-->",IDC_buttonShowCurrent,98,100,53,16,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "=>",IDC_buttonShowAll,98,116,53,16,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "<--",IDC_buttonRemoveCurrent,98,132,53,16,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "<=",IDC_buttonRemoveAll,98,148,53,16,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    RTEXT           "选择服务器:",IDC_STATIC,6,24,76,10
+    COMBOBOX        IDC_comboServer,85,22,192,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "求和",IDC_buttonSum,98,164,53,16,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "单元累计",IDC_buttonTotalUnit,98,180,53,16,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "项目累计",IDC_buttonTotalProject,98,196,53,16,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+END
+
+IDD_ChooseRecords DIALOGEX 0, 0, 302, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "选择记录集"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_comboField1,67,129,212,112,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_comboCondition1,67,145,46,69,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editData1,115,145,163,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_comboField2,67,164,212,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_comboCondition2,67,180,46,64,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editData2,115,180,163,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_comboConditionBetween1And2,17,164,46,63,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_comboField3,67,199,212,52,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_comboCondition3,67,215,46,45,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editData3,115,215,163,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_comboConditionBetween2And3,17,199,46,45,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_comboConditionBetweenTimeAnd1,17,129,46,63,
+                    CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editYear1,51,52,67,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editMonth1,127,52,67,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editDay1,203,52,67,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editYear2,51,68,67,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editMonth2,127,68,67,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editDay2,203,68,67,13,ES_AUTOHSCROLL
+    GROUPBOX        "其他字段符合条件",IDC_STATIC,7,113,287,124
+    GROUPBOX        "索引字段(年月日)符合条件",IDC_STATIC,7,4,287,104
+    COMBOBOX        IDC_comboDayField,203,37,67,122,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_comboMonthField,127,37,67,107,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_comboYearField,51,37,67,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "字段1(年):",IDC_STATIC,51,23,67,13
+    RTEXT           "自:",IDC_STATIC,15,55,25,13
+    RTEXT           "止:",IDC_STATIC,15,68,25,13
+    CTEXT           "字段2(月):",IDC_STATIC,127,23,67,13
+    CTEXT           "字段3(日):",IDC_STATIC,203,23,67,13
+    CONTROL         "索引字段只选择名称中包含年月日者",
+                    IDC_checkFieldOnlyHaveYMD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,51,86,149,13
+END
+
+IDD_RecordShowProperty DIALOGEX 0, 0, 242, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "图片记录显示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "显示宽度: ",IDC_STATIC,64,37,71,11
+    RTEXT           "显示高度: ",IDC_STATIC,66,55,69,11
+    EDITTEXT        IDC_editPicWidth,141,33,56,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editPicHeight,141,52,56,15,ES_AUTOHSCROLL
+    CONTROL         "保持原图比例:",IDC_checkSmallPicKeepRatio,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,49,72,67,10
+    RTEXT           "显示宽度: ",IDC_STATIC,42,155,95,11
+    RTEXT           "显示高度: ",IDC_STATIC,42,173,95,11
+    EDITTEXT        IDC_editBigPicWidth,143,151,56,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editBigPicHeight,143,170,56,15,ES_AUTOHSCROLL
+    CONTROL         "保持原图比例:",IDC_checkBigPicKeepRatio,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,50,190,67,10
+    RTEXT           "偏离窗口左上角纵向距离: ",IDC_STATIC,27,136,110,11
+    EDITTEXT        IDC_editBigPicOffsetY,143,132,56,15,ES_AUTOHSCROLL
+    RTEXT           "偏离左上角横向距离: ",IDC_STATIC,27,117,110,11
+    EDITTEXT        IDC_editBigPicOffsetX,143,113,56,15,ES_AUTOHSCROLL
+    GROUPBOX        "数据格中图片属性",IDC_STATIC,18,13,206,78
+    GROUPBOX        "大图属性",IDC_STATIC,18,99,206,112
+    CONTROL         "绘制图片:",IDC_checkDrawBigPic,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,147,190,51,10
+    CONTROL         "绘制图片:",IDC_checkDrawCellPic,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,146,72,51,10
+END
+
+IDD_DBPicProperty DIALOGEX 0, 0, 242, 110
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "数据库存储图片"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "存入数据库中图片宽度:",IDC_STATIC,31,33,112,11
+    RTEXT           "存入数据库中图片高度:",IDC_STATIC,30,49,113,11
+    CONTROL         "存入数据库中图片保持比例:",IDC_checkDBPicKeepRatio,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,43,
+                    63,117,11
+    EDITTEXT        IDC_editDBPicWidth,151,30,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editDBPicHeight,151,46,47,13,ES_AUTOHSCROLL
+    GROUPBOX        "数据库存储图片",IDC_STATIC,12,12,210,80
+END
+
+IDD_DlgGlobalProperty DIALOGEX 0, 0, 229, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "拨号连接"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "拨号连接:",IDC_STATIC,27,45,56,12
+    COMBOBOX        IDC_comboDialEntry,89,42,64,57,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "拨号",IDC_buttonDial,154,42,31,15,0,WS_EX_CLIENTEDGE
+END
+
+IDD_DlgTranProperty DIALOGEX 0, 0, 240, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "数据传输属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_editMaxHandInRecord,133,22,67,15,ES_AUTOHSCROLL
+    RTEXT           "每次上传最多记录数目:",IDC_STATIC,33,25,93,11
+    EDITTEXT        IDC_editMaxHandDownRecord,133,39,67,15,ES_AUTOHSCROLL
+    RTEXT           "每次下传最多记录数目:",IDC_STATIC,33,42,93,11
+END
+
+IDD_InputServers DIALOGEX 0, 0, 329, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "服务器参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "服务器名",IDC_STATIC,6,16,49,10
+    EDITTEXT        IDC_editServerName,7,31,45,16,ES_AUTOHSCROLL
+    CTEXT           "IP地址",IDC_STATIC,60,16,49,10
+    CTEXT           "端口",IDC_STATIC,117,16,39,10
+    EDITTEXT        IDC_editServerPort,120,31,34,16,ES_AUTOHSCROLL
+    CTEXT           "用户名",IDC_STATIC,166,16,36,10
+    EDITTEXT        IDC_editUserName,156,31,59,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_buttonAdd,272,31,48,17,0,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_listServerProperty,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,50,261,100
+    PUSHBUTTON      "删除",IDC_buttonRemove,274,92,48,17,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_editServerIP,55,31,62,16,ES_AUTOHSCROLL
+    CTEXT           "口令",IDC_STATIC,225,16,36,10
+    EDITTEXT        IDC_editPassword,217,31,51,16,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_LocalPort DIALOGEX 0, 0, 278, 139
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "本服务器参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_editLocalPort,130,49,68,14,ES_AUTOHSCROLL
+    RTEXT           "本服务器使用端口:",IDC_STATIC,14,52,112,14
+    RTEXT           "口令文件:",IDC_STATIC,62,66,64,14
+    EDITTEXT        IDC_editPasswordFile,130,65,67,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_buttonPasswordFile,200,65,22,13,0,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_editLocalIP,130,33,68,14,ES_AUTOHSCROLL
+    RTEXT           "本服务器使用IP:",IDC_STATIC,14,36,112,14
+END
+
+IDD_ChoosePage DIALOGEX 0, 0, 228, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "选择显示页"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,48,136,50,14
+    PUSHBUTTON      "取消",IDCANCEL,123,136,50,14
+    RTEXT           "总页数：",IDC_STATIC,48,43,67,12
+    RTEXT           "当前页：",IDC_STATIC,47,61,67,12
+    EDITTEXT        IDC_editTotalPage,119,41,62,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_editCurrentPage,119,57,62,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "选择页：",IDC_STATIC,47,92,67,12
+    EDITTEXT        IDC_editChoosePage,119,89,62,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_Slider_ChoosePage,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,19,117,187,11
+    RTEXT           "每页显示记录数目：",IDC_STATIC,19,76,95,12
+    EDITTEXT        IDC_editRecordQtyPerPage,119,73,62,14,ES_AUTOHSCROLL
+    RTEXT           "总记录数目：",IDC_STATIC,48,27,67,12
+    EDITTEXT        IDC_editTotalRecord,120,25,62,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_InterfaceProperty DIALOGEX 0, 0, 238, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "界面属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "同时只显示一个信息窗口",IDC_checkShowInfoExclusively,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,53,114,13,
+                    WS_EX_RIGHT
+    CONTROL         "程序启动时就连接服务器",IDC_checkLinkServerAtBegin,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,39,114,13,
+                    WS_EX_RIGHT
+END
+
+IDD_DlgGraphProperty DIALOGEX 0, 0, 230, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "绘图属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,45,203,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,203,50,14
+    RTEXT           "图形种类:",IDC_STATIC,21,30,57,11
+    COMBOBOX        IDC_comboChartType,85,27,77,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "系列名称:",IDC_STATIC,24,99,57,11
+    COMBOBOX        IDC_comboSerName,85,96,77,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "颜色:",IDC_STATIC,42,168,37,11
+    PUSHBUTTON      "...",IDC_buttonColor,164,166,26,14,0,WS_EX_CLIENTEDGE
+    RTEXT           "标志大小:",IDC_STATIC,43,133,37,11
+    EDITTEXT        IDC_editMarkSize,85,130,77,15,ES_AUTOHSCROLL
+    RTEXT           "线条粗细:",IDC_STATIC,43,150,37,11
+    EDITTEXT        IDC_editLineWidth,85,148,77,15,ES_AUTOHSCROLL
+    CONTROL         "饼图中标注百分比",IDC_checkPieMarkRatio,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,84,46,87,13
+    GROUPBOX        "通用属性",IDC_STATIC,17,77,197,116
+    RTEXT           "标志类型:",IDC_STATIC,43,116,37,11
+    COMBOBOX        IDC_comboMarkType,85,113,77,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_SerColor,"Static",SS_BLACKFRAME,86,167,76,12
+END
+
+IDD_DlgPeojectProperty DIALOGEX 0, 0, 269, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "项目属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "当前工区名称缩写:",IDC_STATIC,37,29,87,14
+    EDITTEXT        IDC_editCurrArea,134,26,70,14,ES_AUTOHSCROLL
+    RTEXT           "当前施工队号:",IDC_STATIC,37,45,87,14
+    EDITTEXT        IDC_editCurrCrew,134,42,70,14,ES_AUTOHSCROLL
+    RTEXT           "施工年度:",IDC_STATIC,37,61,87,14
+    EDITTEXT        IDC_editWorkYear,134,58,70,14,ES_AUTOHSCROLL
+    RTEXT           "开始施工月份:",IDC_STATIC,37,76,87,14
+    EDITTEXT        IDC_editWorkMonth,134,74,70,14,ES_AUTOHSCROLL
+    RTEXT           "临时文件路径:",IDC_STATIC,37,109,87,14
+    EDITTEXT        IDC_editTempFilePath,134,106,70,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_buttonTempFilePath,207,106,27,14,0,
+                    WS_EX_CLIENTEDGE
+    RTEXT           "数据库文件路径:",IDC_STATIC,37,92,87,14
+    EDITTEXT        IDC_editDataBasePath,134,90,70,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_buttonDataBaseFilePath,207,90,27,14,0,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_DlgUserInfo DIALOGEX 0, 0, 249, 107
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "用户信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "用户名缩写:",IDC_STATIC,32,33,53,14
+    EDITTEXT        IDC_editUserNameShort,91,31,114,14,ES_AUTOHSCROLL
+    RTEXT           "注意：不得与其他用户名缩写相同且使用最少字符",
+                    IDC_STATIC,31,60,181,14
+END
+
+IDD_DlgReportProperty DIALOGEX 0, 0, 293, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "输出表属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_comboReportNames,81,22,181,119,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_comboProjects,81,39,138,109,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_comboLines,81,56,64,109,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editReportNo,196,56,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editReportCreator,81,73,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editReportAuditor,196,73,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editStartYear,81,92,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editStartMonth,169,92,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editStartDay,221,92,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editEndYear,81,110,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editEndMonth,169,110,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editEndDay,221,110,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editStatYear,81,129,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editStatMonth,169,129,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editStatDay,221,129,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editPrintPage,81,148,64,14,ES_AUTOHSCROLL
+    CONTROL         "按自然月",IDC_radioNaturalMonth,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,156,151,57,11
+    CONTROL         "按统计月",IDC_radioStatMonth,"Button",
+                    BS_AUTORADIOBUTTON,218,151,55,11
+    DEFPUSHBUTTON   "确定",IDOK,86,176,50,14
+    PUSHBUTTON      "取消",IDCANCEL,168,176,50,14
+    RTEXT           "选择表：",IDC_STATIC,14,23,60,15
+    RTEXT           "选择项目：",IDC_STATIC,14,41,60,15
+    RTEXT           "开始时间：",IDC_STATIC,13,95,60,15
+    CTEXT           "年",IDC_STATIC,150,95,15,12
+    CTEXT           "月",IDC_STATIC,200,95,15,12
+    CTEXT           "日",IDC_STATIC,252,95,15,12
+    RTEXT           "结束时间：",IDC_STATIC,13,112,60,15
+    CTEXT           "年",IDC_STATIC,150,112,15,12
+    CTEXT           "月",IDC_STATIC,200,112,15,12
+    CTEXT           "日",IDC_STATIC,251,112,15,12
+    RTEXT           "制表人：",IDC_STATIC,13,75,60,15
+    PUSHBUTTON      "筛选项目",IDC_buttonChooseProjects,222,38,42,15,0,
+                    WS_EX_STATICEDGE
+    RTEXT           "统计时间：",IDC_STATIC,13,131,60,15
+    CTEXT           "年",IDC_STATIC,150,131,15,12
+    CTEXT           "月",IDC_STATIC,200,131,15,12
+    CTEXT           "日",IDC_STATIC,251,131,15,12
+    RTEXT           "审核人：",IDC_STATIC,154,75,37,14
+    RTEXT           "选择测线：",IDC_STATIC,14,59,60,15
+    RTEXT           "编号：",IDC_STATIC,161,59,29,11
+    RTEXT           "打印页码：",IDC_STATIC,25,151,47,11
+END
+
+IDD_ChooseRecordsInd DIALOGEX 0, 0, 239, 257
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "选择记录集"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_comboField1,59,16,163,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_comboCondition1,59,32,163,69,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editData1,59,48,163,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_comboField2,58,96,163,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_comboCondition2,58,112,163,64,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editData2,58,128,163,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_comboConditionBetween1And2,167,80,54,63,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_comboField3,59,179,163,51,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_comboCondition3,59,195,163,45,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_editData3,59,211,163,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_comboConditionBetween2And3,167,163,55,45,
+                    CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,51,239,50,14
+    PUSHBUTTON      "取消",IDCANCEL,137,239,50,14
+    RTEXT           "字段名:",IDC_STATIC,19,19,35,8
+    RTEXT           "字段名:",IDC_STATIC,19,99,35,8
+    RTEXT           "字段名:",IDC_STATIC,19,182,35,8
+    RTEXT           "字段条件:",IDC_STATIC,19,35,35,8
+    RTEXT           "条件数值:",IDC_STATIC,19,50,35,8
+    RTEXT           "条件数值:",IDC_STATIC,19,129,35,8
+    RTEXT           "条件数值:",IDC_STATIC,19,213,35,8
+    RTEXT           "字段条件:",IDC_STATIC,19,115,35,8
+    RTEXT           "字段条件:",IDC_STATIC,19,197,35,8
+    RTEXT           "条件一、二间关系:",IDC_STATIC,85,83,76,8
+    RTEXT           "条件二、三间关系:",IDC_STATIC,87,165,74,8
+    GROUPBOX        "条件一",IDC_STATIC,10,6,223,60
+    GROUPBOX        "条件二",IDC_STATIC,9,71,223,77
+    GROUPBOX        "条件三",IDC_STATIC,9,153,223,79
+END
+
+IDD_DlgReportShowProperty DIALOGEX 0, 0, 278, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "报表显示属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,77,180,50,14
+    PUSHBUTTON      "取消",IDCANCEL,155,180,50,14
+    RTEXT           "表头字体:",IDC_STATIC,23,37,61,12
+    RTEXT           "副表头字体:",IDC_STATIC,27,53,57,12
+    RTEXT           "表脚字体:",IDC_STATIC,29,70,55,12
+    EDITTEXT        IDC_editTitleFont,88,34,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_viceTitleFont,88,51,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_footFont,88,69,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_buttonTitleFont,230,34,25,14,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "...",IDC_buttonViceTitleFont,230,51,25,14,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "...",IDC_buttonFootFont,230,69,25,14,0,WS_EX_CLIENTEDGE
+    RTEXT           "表线宽度:",IDC_STATIC,31,114,53,12
+    RTEXT           "表边界线宽度:",IDC_STATIC,25,130,59,12
+    EDITTEXT        IDC_lineWidth,88,111,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EdgeLineWidth,88,128,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editTitleFontHeight,134,34,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editTitleFontUnderLine,172,34,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editViceTitleFontHeight,134,51,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editViceTitleFontUnderLine,172,51,26,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_editFootFontHeight,134,69,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editFootFontUnderLine,172,69,26,14,ES_AUTOHSCROLL
+    CTEXT           "字体名",IDC_STATIC,91,21,40,9
+    CTEXT           "高度",IDC_STATIC,138,21,35,9
+    CTEXT           "下划线",IDC_STATIC,166,21,35,9
+    EDITTEXT        IDC_editTitleFontWeight,201,34,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editViceTitleFontWeight,201,51,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editFootFontWeight,201,69,26,14,ES_AUTOHSCROLL
+    CTEXT           "重量",IDC_STATIC,194,21,35,9
+    RTEXT           "正文字体:",IDC_STATIC,29,87,55,12
+    EDITTEXT        IDC_contentFont,88,86,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_buttonContentFont,230,86,25,14,0,
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_editContentFontHeight,134,86,35,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editContentFontUnderLine,172,86,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_editContentFontWeight,201,86,26,14,ES_AUTOHSCROLL
+    RTEXT           "备注每行限字符数:",IDC_STATIC,7,146,76,12
+    EDITTEXT        IDC_noteLineCharLimit,88,145,44,14,ES_AUTOHSCROLL
+    RTEXT           "表头图片:",IDC_STATIC,138,115,42,12
+    EDITTEXT        IDC_PicName,184,112,44,14,ES_AUTOHSCROLL
+    RTEXT           "表头图宽:",IDC_STATIC,140,132,40,12
+    EDITTEXT        IDC_PicWidth,184,129,43,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_buttonPicName,230,112,25,14,0,WS_EX_CLIENTEDGE
+END
+
+IDD_DBSumField DIALOGEX 0, 0, 221, 233
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "字段求和"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "求和字段",IDC_staticAddedFields,122,44,98,11
+    CTEXT           "表中字段",IDC_STATIC,28,44,43,11
+    LISTBOX         IDC_ListExistFields,7,60,86,132,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_ListSummedFields,128,60,86,132,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "-->",IDC_buttonSumCurrent,98,93,27,15,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "<--",IDC_buttonRemoveCurrent,98,125,27,15,0,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    RTEXT           "求和后变量名:",IDC_staticResultName,23,20,53,10
+    EDITTEXT        IDC_editSummedName,82,17,126,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,51,206,50,14
+    PUSHBUTTON      "取消",IDCANCEL,121,206,50,14
+    PUSHBUTTON      "=>",IDC_buttonSumAll,98,109,27,15,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "<=",IDC_buttonRemoveAll,97,141,27,15,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "QCDB.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "QCDB.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 254
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DBShowProperty, DIALOG
+    BEGIN
+        RIGHTMARGIN, 277
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    ID_VIEW_DATAFLOW        "数据流窗口"
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+    IDR_MAINFRAME           "QCDB"
+    IDR_QCDBTYPE            "\nQCDB\n空监理数据库\n\n\nQCDB\n"
+    IDR_DBBrowse            "\n数据库浏览\n数据库浏览\n\n\nDBBrowse\n"
+    IDR_Password            "\n\n\n\n\nPassword\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_DBChart             "\n数据库绘图\n数据库绘图\n\n\nDBChart\n"
+    IDR_DataTransfer        "\n数据传输\n数据传输\n\n\nDataTransfer\n"
+    IDR_DataReceiver        "\n数据接收\n接收数据\n\n\nDataReceiver\n"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "QCDB"
+    AFX_IDS_IDLEMESSAGE     "若要获取帮助，请按 F1"
+    AFX_IDS_HELPMODEMESSAGE "选择要获取其帮助信息的对象"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+    ID_HELP_INDEX           "打开帮助\n帮助主题"
+    ID_HELP_FINDER          "列出帮助主题\n帮助主题"
+    ID_HELP_USING           "显示有关如何使用帮助的说明\n帮助"
+    ID_CONTEXT_HELP         "显示有关单击过的按钮、菜单和窗口的帮助信息\n帮助"
+    ID_HELP                 "显示当前任务或命令的帮助信息\n帮助"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以非重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SetGlobalInfo        "设置全局参数\n全局参数"
+    ID_SendDataToServerNoHanded "向服务器发送所有选定记录中未提交过的记录"
+    ID_SendDataToServerAll  "向服务器发送所有选定记录,无论是否已经提交过。"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_Show_Data            "显示本地数据或者服务器数据"
+    ID_buttonSetPar         "设置全局参数\n全局参数"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_buttonHistory        "显示数据传输历史\n数据传输历史"
+    ID_ShowDataFlowHistory  "显示数据传输历史\n数据传输历史"
+    ID_ShowLinker           "显示连接的计算机\n连接的计算机"
+    ID_GetDataFromServer    "从服务器或者本地机获取数据并编辑\n获取数据"
+    ID_OutputTable          "输出报表\n输出报表"
+    ID_ZoomIn               "放大\n放大"
+    ID_ZoomOut              "缩小\n缩小"
+    ID_ZoomFull             "满屏\n满屏"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WORKSPACEBAR         "显示工作间\n工作间"
+    ID_OutputBar            "显示信息窗\n信息窗"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_ReportCreator       "\n输出报表\n输出报表\n\n\nReportCreator\n"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ConnectServers       "连接服务器\n连接服务器"
+    ID_UserRegister         "登记用户\n登记用户"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_buttonSetPar         "设置全局参数\n设置全局参数"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_buttonHistory        "显示数据传输历史\n显示数据传输历史"
+    ID_VIEW_DATALINKER      "显示计算机连接\n显示计算机连接"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WORKSPACEBAR         "显示作业浏览区\n显示作业浏览区"
+    ID_OutputBar            "显示信息输出区\n显示信息输出区"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\QCDB.rc2"  // 非 Microsoft Visual C++ 编辑资源
+#include "afxres.rc"         // 标准组件
+#include "afxprint.rc"       // 打印/打印预览资源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
